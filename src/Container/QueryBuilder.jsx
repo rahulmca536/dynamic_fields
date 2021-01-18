@@ -44,9 +44,9 @@ function App() {
     };
 
     return (
-        <AppContainer>
+        <AppContainer inputList={inputList}>
             {inputList.map((card_data, index) => (
-                <ANDFilter>
+             <ANDFilter>
                     {card_data.or.map((or_data, i) => (
                             <ORFilter
                                 index={i}
@@ -54,9 +54,12 @@ function App() {
                                 handleInputChange={handleInputChange}
                                 handleRemoveClick={handleRemoveClick}
                                 handleAddClick={handleAddClick}
+                                handleAddarrClick={handleAddarrClick}
+                                handlecardremoveClick={handlecardremoveClick}
+                                card_data={card_data}
                             />
                         ))}
-                </ANDFilter>
+                        </ANDFilter>
             ))}<br />
             <button >Save Changes</button>
         </AppContainer>

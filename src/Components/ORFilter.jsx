@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ORFilter({ index: i, parentIndex, handleInputChange, handleRemoveClick, handleAddClick }) {
+export default function ORFilter({ index: i, parentIndex, handleInputChange, handleRemoveClick, handleAddClick, handleAddarrClick, card_data, handlecardremoveClick }) {
     return (
         <div key={i}>
             <p>Card {parentIndex} Index {i}</p>
@@ -18,7 +18,7 @@ export default function ORFilter({ index: i, parentIndex, handleInputChange, han
             </div>
             {i === 0 && <button onClick={handleAddarrClick}>AND</button>}
 
-            {i === 0 && parentIndex === 0 && <button onClick={() => handlecardremoveClick(parentIndex)}>Remove Card</button>}
+            {i === 0 && parentIndex !== 0 && <button onClick={() => handlecardremoveClick(parentIndex)}>Remove Card</button>}
         </div>
     )
 }
