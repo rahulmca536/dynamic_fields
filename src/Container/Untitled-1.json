@@ -1,0 +1,81 @@
+{
+    "and": [
+        {
+            "or": [
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "or": [
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "or": [
+                {},
+                {},
+                {}
+            ]
+        },
+        {
+            "or": [
+                {}
+            ]
+        }
+    ]
+}
+
+[
+    {
+        "or": [
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            }
+        ]
+    },
+    {
+        "or": [
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            }
+        ]
+    },
+    {
+        "or": [
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            },
+            {
+                "firstName": ""
+            }
+        ]
+    }
+]
