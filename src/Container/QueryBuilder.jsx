@@ -44,7 +44,12 @@ function App() {
     };
 
     return (
-        <AppContainer inputList={inputList}>
+        <div className="container">
+                <div className="left-col">
+      Left col
+    </div>
+            <div className="center-col">
+            {/* <AppContainer inputList={inputList}> */}
             {inputList.map((card_data, index) => (
              <ANDFilter>
                     {card_data.or.map((or_data, i) => (
@@ -62,7 +67,11 @@ function App() {
                         </ANDFilter>
             ))}<br />
             <button >Save Changes</button>
-        </AppContainer>
+        {/* </AppContainer> */}
+            </div>
+
+        </div>
+
 
     );
 }

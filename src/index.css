@@ -45,7 +45,7 @@ code {
 
 .card-cont {
   display: block;
-  width: 200px;
+  /* width: 200px; */
   border: 1px solid #ccc;
   margin-bottom: 5px;
   padding: 5px;
@@ -58,3 +58,31 @@ code {
   border-radius: 4px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+}
+
+.center-col {
+  flex: 1;
+  align-items: center;
+  background: #aaa;
+  overflow-y: scroll;
+}
+
+.right-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e7e7e7;
+}
